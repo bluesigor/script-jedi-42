@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/571edd157e8954bab500032d/train/javascript
+//   https://www.codewars.com/kata/571edd157e8954bab500032d/train/javascript
 
 var v1 = 50;
 (v2 = 100), (v3 = 150), (v4 = 200), (v5 = 2), (v6 = 250);
@@ -30,7 +30,7 @@ function equal5() {
 }
 
 
-//https://www.codewars.com/kata/571edea4b625edcb51000d8e/train/javascript
+//  https://www.codewars.com/kata/571edea4b625edcb51000d8e/train/javascript
 
 var a1 = "A",
   a2 = "a",
@@ -71,7 +71,7 @@ function answer3() {
   return "yes";
 }
 
-//https://www.codewars.com/kata/571effabb625ed9b0600107a
+//  https://www.codewars.com/kata/571effabb625ed9b0600107a
 function getLength(arr) {
   //return length of arr
   return arr.length;
@@ -96,7 +96,7 @@ function popElement(arr) {
   return arr;
 }
 
-//https://www.codewars.com/kata/571f1eb77e8954a812000837/train/javascript
+//   https://www.codewars.com/kata/571f1eb77e8954a812000837/train/javascript
 
 function animal(obj) {
   var animalType = {
