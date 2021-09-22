@@ -2,7 +2,8 @@
 
 function trueOrFalse(val) {
   if (val <= false) return "false";
-  else if ((val > 0, val != true, val != undefined)) return "true";
+  else if ((val > false, val > 0, val != false, val != undefined))
+    return "true";
   else if (val != 0) return "false";
 }
 
@@ -20,3 +21,81 @@ function saleHotdogs(n) {
 }
 
 // http://www.codewars.com/kata/572059afc2f4612825000d8a
+
+
+// Few examps:
+
+//firstExample
+function howManydays(days){
+  
+  var dayNum
+  switch (days){
+    case 1:
+      dayNum=31;
+    break;
+      case 2:
+      dayNum=28;
+    break;
+      case 3:
+      dayNum=31;
+    break;
+      case 4:
+      dayNum=30;
+    break;
+      case 5:
+      dayNum=31;
+    break;
+      case 6:
+      dayNum=30;
+    break;
+      case 7:
+      dayNum=31;
+    break;
+      case 8:
+      dayNum=31;
+    break;
+      case 9:
+      dayNum=30;
+    break;
+      case 10:
+      dayNum=31;
+    break;
+      case 11:
+      dayNum=30;
+    break;
+      case 12:
+      dayNum=31;
+    break;
+  }
+   
+  return dayNum;
+}
+
+//secondExample
+function howManydays(days){
+  
+  var dayNum
+  switch (days){
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      dayNum=31;
+      
+    break;
+    case 2:  
+      dayNum=28;
+    break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      dayNum=30;
+    break;
+  }
+   
+  return dayNum;
+}
