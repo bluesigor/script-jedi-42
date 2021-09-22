@@ -28,7 +28,7 @@ function saleHotdogs(n) {
 //firstExample
 function howManydays(days){
   
-  var dayNum
+  var dayNum;
   switch (days){
     case 1:
       dayNum=31;
@@ -74,7 +74,7 @@ function howManydays(days){
 //secondExample
 function howManydays(days){
   
-  var dayNum
+  var dayNum;
   switch (days){
     case 1:
     case 3:
