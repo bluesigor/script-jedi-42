@@ -28,21 +28,29 @@ function pickIt(arr) {
   return [odd, even];
 }
 
-//https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
+// https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
 
+function grabDoll(dolls) {
+  const bag = [];
+  for (let i = 0; i < dolls.length; i++) {
+    if (bag.length === 3) {
+      break;
+    } else if (dolls[i] === "Barbie doll") {
+      bag.push("Barbie doll");
+    } else if (dolls[i] === "Hello Kitty") {
+      bag.push("Hello Kitty");
+    } else continue;
+  }
+  return bag;
+}
 
+// https://www.codewars.com/kata/5722b3f0bd5583cf44001000
 
-
-
-
-
-
-
-
-
-//https://www.codewars.com/kata/5722b3f0bd5583cf44001000
-
-
-
-
-
+function giveMeFive(obj) {
+  const five = [];
+  for (let key in obj) {
+    if (key.length == 5) five.push(key);
+    if (obj[key].length == 5) five.push(obj[key]);
+  }
+  return five;
+}
