@@ -13,9 +13,9 @@ function alienLanguage(str) {
 // https://www.codewars.com/kata/57284d23e81185ae6200162a/train/javascript
 
 function topSecret(str) {
-  var chars = str.split("");
+  let chars = str.split("");
   for (i = 0; i < chars.length; i++) {
-    var tmp = chars[i].charCodeAt();
+    let tmp = chars[i].charCodeAt();
     if ((tmp > 67 && tmp < 91) || (tmp > 99 && tmp < 123)) tmp -= 3;
     else {
       if ((tmp < 68 && tmp > 64) || (tmp < 100 && tmp > 96)) tmp += 23;
