@@ -9,18 +9,16 @@ function match(candidate, job) {
 // https://www.codewars.com/kata/56c2578be8b139bd5c001bd8
 
 function match(job, candidates) {
-  let matching = [];
-  
-  candidates.forEach(item => {
-      const equity = item.desiresEquity == false || job.equityMax > 0;
-      let location = false;
-    
-      job.locations.forEach(loc => {
-        if(loc == item.currentLocation || item.desiredLocations.includes(loc)) {
-          location = true;
-        }
-      })
-      if(equity && location) matching.push(item);
-    })
+  const matching = [];
+  candidates.forEach((item) => {
+    const equity = item.desiresEquity == false || job.equityMax > 0;
+    let location = false;
+    job.locations.forEach((loc) => {
+      if (loc == item.currentLocation || item.desiredLocations.includes(loc)) {
+        location = true;
+      }
+    });
+    if (equity && location) matching.push(item);
+  });
   return matching;
-  }
+}
