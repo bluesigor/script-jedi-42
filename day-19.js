@@ -3,7 +3,7 @@
 function countAnimals(animals,count){
   const result = [];
   for(let i = 0; i < count.length; i++){
-  let match = (animals.match(new RegExp(count[i],"g"))||[]).length;
+  const match = (animals.match(new RegExp(count[i],"g"))||[]).length;
   result.push(match);
     }
   return result;
