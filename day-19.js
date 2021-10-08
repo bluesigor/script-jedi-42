@@ -1,12 +1,12 @@
 // https://www.codewars.com/kata/5735e39313c205fe39001173/train/javascript
 
 function countAnimals(animals,count){
-  const result = []
+  const result = [];
   for(let i = 0; i < count.length; i++){
   let match = (animals.match(new RegExp(count[i],"g"))||[]).length;
-  result.push(match)
+  result.push(match);
     }
-  return result
+  return result;
 }
 
 // https://www.codewars.com/kata/573975d3ac3eec695b0013e0
